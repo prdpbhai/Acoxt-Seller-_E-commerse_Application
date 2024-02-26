@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Cigrate_History_Activity">
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/blue_bcc_home"/>
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="  Activity "
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/left_arrow"
+        android:fontFamily="@font/acme"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/dp"
+        app:civ_border_width="2dp"
+        android:layout_alignTop="@+id/profile_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        app:civ_border_color="#DDD9D9"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendar_recyclerview_his"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_img"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_card_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/cig_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#044561"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:text="03 Aug"/>
+        <TextView
+            android:id="@+id/add_cig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cigarette Counter"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/cig_date"
+            android:fontFamily="@font/inter_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+        <RelativeLayout
+            android:id="@+id/relative_cig_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:background="@drawable/activity_border_add_cig"
+            android:layout_below="@+id/add_cig"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/history_cig_recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_rac_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-15dp"/>
+
+
+
+
+
+</RelativeLayout>

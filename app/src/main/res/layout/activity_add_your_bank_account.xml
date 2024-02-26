@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/to_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/blue_top_smal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/left_arrow"
+        android:fontFamily="@font/inter_medium"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@id/to_img">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/gst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to_img"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Add your bank Account"
+                android:textColor="#0D0C0C"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/gst1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACOXT needs your bank account details to transfer the money from your online store."
+                android:textColor="#FD7C7C7E"
+                android:layout_marginRight="30dp"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/gst"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_gst"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/gst1"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/gray_rac_paymnt"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="6dp">
+
+                <TextView
+                    android:id="@+id/gst_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GST No."
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#5A5A5A"/>
+                <TextView
+                    android:id="@+id/gst_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18AABCU96D3R1ZM"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_below="@+id/gst_no"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/trade_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trade Name"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/gst_num"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#5A5A5A"/>
+                <TextView
+                    android:id="@+id/trad_nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raj Sharma"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_below="@+id/trade_name"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/legal_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Legal name"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/trad_nam"
+                    android:fontFamily="@font/inter"
+                    android:textColor="#5A5A5A"/>
+                <TextView
+                    android:id="@+id/legal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raj Sharma Store"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_below="@+id/legal_n"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shop_addr_rac"
+                android:layout_below="@+id/relative_gst"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acount Holder Name"
+                        android:textColor="#0D0C0C"
+                        android:fontFamily="@font/inter"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pincode_rac"
+                        android:layout_marginRight="20dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Account Number"
+                        android:textColor="#0D0C0C"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/inter"
+                        android:layout_marginLeft="23dp"
+                        android:textSize="17dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pincode_rac"
+                        android:layout_marginRight="20dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Re-Enter Bank Account Number"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#0D0C0C"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="23dp"
+                        android:textSize="17dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pincode_rac"
+                        android:layout_marginRight="20dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IFSC Code"
+                        android:textColor="#0D0C0C"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="23dp"
+                        android:textSize="17dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:background="@drawable/pincode_rac"
+                        android:layout_marginRight="20dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/relative"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:text="This information will be securely saved"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/continue_btn_bck"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/save"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Save and Continue"
+                    android:textSize="18dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/botom_bck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_rac_bottom"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_rac_add">
+    <TextView
+        android:id="@+id/correct_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home-Bhangel sec-6, Noida, Uttae pradesh"
+        android:textColor="#DF154064"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/correct_location">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Pay"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#423E3E"
+                android:textSize="19sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 540"
+                android:textSize="20dp"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/rupees_icon"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/continue_btn_bck"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue Payment"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

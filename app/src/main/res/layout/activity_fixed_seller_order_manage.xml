@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fixed_seller_order_manage">
+
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_green_header_new_bck"
+        android:layout_marginTop="-15dp"/>
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_btn_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order Detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#81B4CB"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_img"
+        tools:context=".Fregment.Buyer_detail_fragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Name:"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#515151"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"
+                android:textColor="#1B1A1A"
+                android:layout_below="@+id/name_txt"
+                android:text="Pradeep Yadav"/>
+
+            <TextView
+                android:id="@+id/shipping_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/name"
+                android:text="Shipping Address:"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#515151"/>
+            <TextView
+                android:id="@+id/block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"
+                android:textColor="#1B1A1A"
+                android:layout_below="@+id/shipping_address"
+                android:text="Block_A Noida 201310"/>
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:textColor="#515151"
+                android:layout_below="@+id/block"
+                android:text="Order Id"/>
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"
+                android:textColor="#1B1A1A"
+                android:layout_below="@+id/order"
+                android:text="UP,India"/>
+
+
+            <RelativeLayout
+                android:id="@+id/relative_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_id">
+                <TextView
+                    android:id="@+id/phone_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:text="Phone:"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15sp"
+                    android:textColor="#515151"/>
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:textColor="#1B1A1A"
+                    android:layout_below="@+id/phone_txt"
+                    android:text="+9451507441"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/relative_phone">
+                <TextView
+                    android:id="@+id/email_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Email:"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15sp"
+                    android:textColor="#515151"/>
+                <TextView
+                    android:id="@+id/email_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:textColor="#1B1A1A"
+                    android:layout_below="@+id/email_txt"
+                    android:text="Pradeep.yadav@fourbrick.com"/>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/packed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Packed"
+                android:layout_below="@+id/relative_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

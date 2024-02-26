@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity_cigrate_counter_Activity">
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/blue_bcc_home"/>
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="  Activity "
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/left_arrow"
+        android:fontFamily="@font/acme"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/dp"
+        app:civ_border_width="2dp"
+        android:layout_alignTop="@+id/profile_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        app:civ_border_color="#DDD9D9"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendar_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top_img"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_card_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/add_cig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cigarette Counter"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <RelativeLayout
+            android:id="@+id/relative_cig_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:background="@drawable/activity_border_add_cig"
+            android:layout_below="@+id/add_cig"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/three_cig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:text="Last 3 Cigarettes"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/count_cig_recyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_below="@+id/three_cig"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/view_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View full history "
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/inter"
+                android:layout_marginBottom="5dp"
+                android:drawableRight="@drawable/drop_down_black_icon"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_cig_counter"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="00" />
+        <TextView
+            android:id="@+id/cigg_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cigarette Count "
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/count"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cigg_count">
+            <ImageView
+                android:id="@+id/decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/minus_cirlce_icon"/>
+            <ImageView
+                android:id="@+id/increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/plus_circle_icon"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_rac_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-15dp"/>
+
+
+
+
+
+</RelativeLayout>

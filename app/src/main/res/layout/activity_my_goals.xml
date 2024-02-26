@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".My_Goals_Activity">
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/blue_bcc_home"/>
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="  Activity "
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/left_arrow"
+        android:fontFamily="@font/acme"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/dp"
+        app:civ_border_width="2dp"
+        android:layout_alignTop="@+id/profile_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        app:civ_border_color="#DDD9D9"
+        />
+    <TextView
+        android:id="@+id/today_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today "
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="9dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/today_txt"
+        android:layout_centerHorizontal="true">
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/cir"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:cs_circle_color="@color/white"
+            app:cs_circle_progress_color="#044561"
+            app:cs_circle_stroke_width="20dp"
+            app:cs_circle_style="round"
+            android:layout_centerHorizontal="true"
+            app:cs_circle_x_radius="5dp"
+            app:cs_circle_y_radius="15dp"
+            app:cs_disable_pointer="false"
+            app:cs_disable_progress_glow="true"
+            app:cs_hide_progress_when_empty="true"
+            app:cs_lock_enabled="true"
+            app:cs_maintain_equal_circle="true"
+            app:cs_max="100"
+            app:cs_move_outside_circle="true"
+            app:cs_negative_enabled="false"
+            android:layout_gravity="center"
+            app:cs_pointer_alpha_ontouch="5"
+            app:cs_pointer_angle="5"
+            app:cs_pointer_color="#044561"
+            app:cs_pointer_halo_border_width="4dp"
+            app:cs_pointer_halo_width="4dp"
+            app:cs_pointer_stroke_width="20dp"
+            app:cs_progress="100"
+            android:elevation="20dp"
+            app:cs_start_angle="10"
+            app:cs_use_custom_radii="false"
+            android:rotation="312"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/under_cir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2/4"
+                android:textColor="#292727"
+                android:layout_centerHorizontal="true"
+                android:textSize="21dp"
+                android:fontFamily="@font/inter_semibold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal Achieved"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/under_cir"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="#717070"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/relative_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:layout_marginLeft="14dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="14dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/blue_rac_goal">
+            <TextView
+                android:id="@+id/crav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#717070"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Craving Today"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_below="@+id/crav"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/blue_rac_goal">
+            <TextView
+                android:id="@+id/smok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#717070"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Smoked Today"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_below="@+id/smok"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/progress_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Overview"
+        android:layout_below="@+id/relative_count"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_medium"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:id="@+id/percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/progress_overview">
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_semibold"/>
+        <TextView
+            android:id="@+id/fifty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_semibold"/>
+        <TextView
+            android:id="@+id/hundred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter_semibold"/>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/percent"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="50"
+        android:progress="100"
+        android:progressDrawable="@drawable/custom_seekbar"
+        android:thumb="@null" />
+    <RelativeLayout
+        android:id="@+id/cigr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar">
+        <TextView
+            android:id="@+id/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Cigarette"
+            android:layout_marginLeft="20dp"
+            android:textColor="#717070"
+            android:textSize="13sp"
+            android:fontFamily="@font/inter_semibold"/>
+        <TextView
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Cigarette"
+            android:layout_centerHorizontal="true"
+            android:textColor="#717070"
+            android:textSize="13sp"
+            android:fontFamily="@font/inter_semibold"/>
+        <TextView
+            android:id="@+id/zero_cig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Cigarette"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="#717070"
+            android:textSize="13sp"
+            android:fontFamily="@font/inter_semibold"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear_product_link"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/linear_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/search">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To order"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Tobacco"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="#ED2020"
+                    android:textSize="19sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Products"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/link_btn"
+                android:text="  Get Link"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter_semibold"
+                android:drawableRight="@drawable/arrow_up"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/cigrate_box"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

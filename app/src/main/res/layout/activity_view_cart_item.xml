@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDECEC"
+    tools:context=".Fregment.Category_Fragment">
+
+    <ImageView
+        android:id="@+id/blue_bcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_new_bck"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-55dp"/>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Munchies"
+        android:src="@drawable/back_btn_icon"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="23dp"-->
+<!--        android:layout_height="23dp"-->
+<!--        android:src="@drawable/search_icon"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerMain"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/blue_bcc"
+                android:layout_height="150dp"/>
+            <RelativeLayout
+                android:id="@+id/linear_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewPagerMain"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nestle Choclates"
+                        android:textColor="#154064"
+                        android:textSize="19sp"
+                        android:layout_marginLeft="40dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500gm"
+                        android:textColor="#848789"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500"
+                        android:drawableLeft="@drawable/rupees_icon"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="#154064"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_add_card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp">
+                    <RelativeLayout
+                        android:id="@+id/relative_decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rac_minus">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/minus_sign"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:fontFamily="@font/inter_semibold"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/black_rac_plus">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/white_plus_sign"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative_card_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/linear_add"
+                android:background="@drawable/gray_rac_add">
+                <RelativeLayout
+                    android:id="@+id/anout_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About Product"
+                        android:fontFamily="@font/inter_medium"
+                        android:textColor="#154064"
+                        android:textSize="19sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_up_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="40dp"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/nestie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nestle Classic Silk Fruit and Nut Chocolate Bar,"
+                    android:layout_below="@+id/anout_product"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/inter"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500 g"
+                    android:layout_below="@+id/nestie"
+                    android:layout_marginLeft="30sp"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_medium"/>
+                <LinearLayout
+                    android:id="@+id/linear_short"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/five"
+                    android:layout_marginLeft="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:textSize="17sp"
+                        android:text="Sold by"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:textColor="#044561"
+                        android:text=" Rk World Infocom Pvt Ltd"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_short1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_short"
+                    android:layout_marginLeft="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:textSize="17sp"
+                        android:text="and"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:textColor="#044561"
+                        android:text=" Fulfilled by Amazon."/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/add_cart_blue_bck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="21sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"
+                        android:text="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Item|₹ "
+                        android:fontFamily="@font/inter"
+                        android:textSize="21sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="400"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/linear_add_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="view Cart"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="21sp"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+
+</RelativeLayout>

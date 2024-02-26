@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="70dp">
+    <RelativeLayout
+        android:id="@+id/your_location_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Location"
+            android:textSize="19sp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true" />
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/cancel_tick_icon"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginRight="20dp"/>-->
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/your_location_text"
+        android:background="@drawable/search_location_rac"/>
+    <RelativeLayout
+        android:id="@+id/relative_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_location"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/current_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/red_location_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Current Location"
+                android:layout_marginLeft="6dp"
+                android:textColor="#F62A2A"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/using_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Using GPS"
+            android:textColor="#F62A2A"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/inter"
+            android:textSize="15sp"
+            android:layout_below="@id/current_location"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

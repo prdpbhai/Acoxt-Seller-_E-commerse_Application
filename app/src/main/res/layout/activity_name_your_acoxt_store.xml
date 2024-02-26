@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_store"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/to_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/top_new_bck"/>
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/back_btn_icon"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:id="@+id/gst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Name your ACOXT Store"
+        android:textColor="#81B4CB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/gst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can update the Store Name at any time
+from your account settings."
+        android:textColor="#FD7C7C7E"
+        android:layout_marginRight="30dp"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/to_img"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:background="@drawable/white_rac_namestore"
+        android:layout_below="@+id/gst1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/text_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Your Store Name"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/store_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#A8A8A8"
+            android:background="@drawable/store_name_rac"
+            android:layout_below="@+id/text_store"
+            android:layout_height="40dp"/>
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/store_name_rac"-->
+<!--            android:layout_marginTop="15dp"-->
+
+<!--            android:layout_below="@+id/store_name"-->
+<!--            android:entries="@array/options_array" />-->
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/continue_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/continue_btn_bck"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/relative"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Continue"
+            android:textSize="18dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

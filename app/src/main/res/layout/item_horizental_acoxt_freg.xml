@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="13dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#EBEEF1">
+        <RelativeLayout
+            android:id="@+id/relative_item_type"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="0dp"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/category_img"
+                android:layout_width="match_parent"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/item_name_hor"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Cigarette"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/category_img"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.cardview.widget.CardView>
+

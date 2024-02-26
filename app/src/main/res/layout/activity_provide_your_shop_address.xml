@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_addr"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/to_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/top_new_bck"/>
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/back_btn_icon"
+        android:fontFamily="@font/inter_medium"/>
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Provide your shop address"
+        android:textColor="#81B4CB"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/to_img">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gst1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_text"
+                    android:textColor="#FD7C7C7E"
+                    android:layout_marginRight="30dp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/gst"/>
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gst1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+<!--                    <CheckBox-->
+<!--                        android:id="@+id/check_box"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="17dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="Add new shop address"-->
+<!--                        android:fontFamily="@font/inter_medium"/>-->
+
+                    <RelativeLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pincode"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="17sp"
+                            android:layout_alignStart="@+id/edit_pincode" />
+                        <EditText
+                            android:id="@+id/edit_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="719712"
+                            android:textColorHint="#A8A8A8"
+
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:ems="10"
+                            android:inputType="textCapWords" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/linear1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="17sp"
+                            android:layout_alignStart="@+id/edit_city" />
+                        <EditText
+                            android:id="@+id/edit_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="Noida"
+                            android:textColorHint="#A8A8A8"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:ems="10"
+                            android:inputType="textCapWords" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/linear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/linear2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="17sp"
+                            android:layout_alignStart="@+id/edit_state" />
+                        <EditText
+                            android:id="@+id/edit_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="Uttar Pradesh"
+                            android:textSize="15sp"
+                            android:textColorHint="#A8A8A8"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:ems="10"
+                            android:inputType="textCapWords" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/linear4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/linear3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Street and Building No."
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="17sp"
+                            android:layout_alignStart="@+id/edit_addre" />
+                        <EditText
+                            android:id="@+id/edit_addre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:hint="Gurugram, Sec-5 "
+                            android:textSize="15sp"
+                            android:textColorHint="#A8A8A8"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            android:ems="10"
+                            android:inputType="textCapWords" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/continue_shop_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/submit_bck"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Continue"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+</RelativeLayout>

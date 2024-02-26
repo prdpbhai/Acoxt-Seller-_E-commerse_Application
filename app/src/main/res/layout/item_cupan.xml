@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/cupan_bck">
+    <RelativeLayout
+        android:id="@+id/relative_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:id="@+id/img_btn"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:src="@drawable/chipps_icon"/>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cupan_inner_gray_bck"
+            android:layout_toEndOf="@id/img_btn">
+            <TextView
+                android:id="@+id/coupon_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZEPACOXT"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textColor="#989898"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APPLY"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#626262"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlock flat ₹500 off coupon on Munchies"
+        android:textColor="#707070"
+        android:layout_below="@+id/relative_apply"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/dot_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@drawable/dott_line"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/text1"/>
+    <TextView
+        android:id="@+id/add_item_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Items worth ₹643 to quality for this deal."
+        android:layout_below="@+id/dot_line"
+        android:textColor="#C25A7B"
+        android:layout_marginTop="7dp"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_unblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlock this coupon on Acoxt orders above ₹643"
+        android:layout_below="@+id/add_item_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ MORE"
+        android:layout_below="@+id/text_unblock"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

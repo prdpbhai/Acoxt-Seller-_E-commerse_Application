@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/top_new_bck"/>
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="  Profile "
+        android:layout_marginLeft="21dp"
+        android:textColor="#81B4CB"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"/>
+    <RelativeLayout
+        android:id="@+id/relative_profile_image"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_text"
+        android:layout_marginTop="-5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/user_profile_icon"
+            app:civ_border_width="2dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#DDD9D9"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/user_profile_icon"
+            app:civ_border_width="2dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#DDD9D9"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="7dp"
+            android:background="#81B4CB"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="50dp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/edit_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/pencil_eddit"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_profile_image"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#807D7D"
+            android:fontFamily="@font/poppins"
+            android:textSize="17sp"
+            android:layout_alignStart="@+id/user_name" />
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="mack"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FA838383"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="textCapWords" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#807D7D"
+            android:fontFamily="@font/poppins"
+            android:layout_alignStart="@+id/edit_email"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="customer@gmail.com"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FA838383"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="text" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="#807D7D"
+            android:fontFamily="@font/poppins"
+            android:layout_alignStart="@+id/edit_phone"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="(55)-74829847"
+            android:textSize="15sp"
+            android:maxLength="10"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FA838383"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="phone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sellar_id"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#807D7D"
+            android:fontFamily="@font/poppins"
+            android:layout_alignStart="@+id/edit_gender"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/edit_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="Female"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FA838383"
+            android:textColorHint="#FA838383"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="text" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/gender"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textColor="#807D7D"
+            android:fontFamily="@font/poppins"
+            android:layout_alignStart="@+id/edit_dob"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/edit_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FA838383"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="10/4/1977"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FA838383"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="phone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/gst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/phone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST Number"
+            android:textColor="#807D7D"
+            android:fontFamily="@font/poppins"
+            android:layout_alignStart="@+id/edit_gst"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/edit_gst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="*************"
+            android:textSize="15sp"
+            android:maxLength="15"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FA838383"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:inputType="text" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sellar_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/gst"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sellar Type"
+                android:textColor="#807D7D"
+                android:fontFamily="@font/poppins"
+                android:layout_alignStart="@+id/seller_type_txt"
+                android:textSize="17sp" />
+            <EditText
+                android:id="@+id/seller_type_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="#FA838383"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:hint="*************"
+                android:layout_marginRight="40dp"
+                android:ems="10"
+                android:inputType="phone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sellar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/sellar_type"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sellar Id"
+                android:textColor="#807D7D"
+                android:fontFamily="@font/poppins"
+                android:layout_alignStart="@+id/seller_id_txt"
+                android:textSize="17sp" />
+            <EditText
+                android:id="@+id/seller_id_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins"
+                android:textColorHint="#FA838383"
+                android:textColor="#FA838383"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:hint="*************"
+                android:layout_marginRight="40dp"
+                android:ems="10"
+                android:inputType="phone" />
+        </RelativeLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/blue_rac_bottom"-->
+<!--        android:layout_marginBottom="-20dp"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+
+    <RelativeLayout
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/submit_otp_bck"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/dob"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Save"
+            android:textSize="17dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

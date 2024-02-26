@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location_Access_Activity">
+    <TextView
+        android:id="@+id/your_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What’s your location?"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/need_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We need your location to show available stores and products"
+        android:layout_below="@+id/your_location"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"/>
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/location_image"
+        android:layout_below="@+id/need_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/allow_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:background="@drawable/continue_btn_bck"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Allow Location access"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/manual_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Location Manually"
+            android:textColor="#044561"
+            android:layout_below="@+id/allow_location"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Enter_Address">
+    <ImageView
+        android:id="@+id/to_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/top_green_header_new_bck"/>
+
+    <TextView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="   Delivery Address"
+        android:layout_marginLeft="20dp"
+        android:textColor="#81B4CB"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/back_btn_icon"
+        android:fontFamily="@font/acme"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:layout_below="@id/to_img"
+        android:textSize="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginLeft="30dp"/>
+
+   <RelativeLayout
+       android:id="@+id/relative_adder"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_below="@+id/address">
+       <TextView
+           android:id="@+id/hAddres"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="23dp"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="15dp"
+           android:textColor="#044561"
+           android:text=" Home Address"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="43dp"
+           android:background="@drawable/blue_rac_address"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:hint="Sec-57, Block A"
+           android:textSize="16sp"
+           android:paddingLeft="10dp"
+           android:layout_below="@+id/hAddres"/>
+
+   </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative_building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_adder"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/hAddres1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#044561"
+            android:text="Building and Block No."/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/blue_rac_address"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Block A"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/hAddres1"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative_landmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_building"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/hAddres2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#044561"
+            android:text="Landmark and Area Name (optional)"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/blue_rac_address"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Sec-57, Block A"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/hAddres2"/>
+
+    </RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/add_address"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/relative_landmark"-->
+<!--        android:text="Add Address Label"-->
+<!--        android:layout_marginLeft="25dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:fontFamily="@font/roboto_medium"-->
+<!--        android:layout_marginTop="30dp"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linear_lebel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_below="@+id/add_address">-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/home"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/blue_raccc"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:gravity="center_horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/dm_sans_medium"-->
+<!--                android:text="Home"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/work"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/gray_rac_homedelivery"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:gravity="center_horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="13dp"-->
+<!--                android:fontFamily="@font/dm_sans_medium"-->
+<!--                android:text="Work"-->
+<!--                android:textSize="18sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textColor="#656565" />-->
+
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/other"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/gray_rac_homedelivery"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:gravity="center_horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="13dp"-->
+<!--                android:fontFamily="@font/dm_sans_medium"-->
+<!--                android:text="Other"-->
+<!--                android:textSize="18sp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textColor="#656565" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/enter_address_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/continue_btn_bck"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/relative_landmark"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Save and Continue"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+   
+
+
+</RelativeLayout>

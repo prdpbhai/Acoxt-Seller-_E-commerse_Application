@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/java"
+        android:title="Paan corner" />
+
+    <item
+        android:id="@+id/kotlin"
+        android:title="Cold drink and Juices" />
+
+    <item
+        android:id="@+id/android"
+        android:title="Munchies" />
+
+    <item
+        android:id="@+id/react_native"
+        android:title="Sweet cravings" />
+    <item
+        android:id="@+id/biscuits"
+        android:title="Biscuits" />
+</menu>

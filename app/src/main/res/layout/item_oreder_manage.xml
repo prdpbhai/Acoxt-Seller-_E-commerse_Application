@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/carditem"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:background="@drawable/order_manage_rac_border"
+    android:paddingLeft="10dp">
+
+    <LinearLayout
+        android:id="@+id/order_no"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order No:"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34323"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relative_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_no">
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 October-2:00Pm"
+            android:textColor="#7E7D7D"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_date">
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In transit"
+            android:textColor="#7E7D7D"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"
+            />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginRight="30dp">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="14sp"-->
+<!--                android:text="Item"-->
+<!--                android:textColor="#7E7D7D"-->
+<!--                android:fontFamily="@font/poppins" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="14sp"-->
+<!--                android:text="*"-->
+<!--                android:textColor="#7E7D7D"-->
+<!--                android:fontFamily="@font/poppins" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="14sp"-->
+<!--                android:text="2"-->
+<!--                android:textColor="#7E7D7D"-->
+<!--                android:fontFamily="@font/poppins" />-->
+<!--        </LinearLayout>-->
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CheckOut_Activity">
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/my_cart_top_bc"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/left_arrow"
+        android:text=" My Cart ( 2 Items ) "
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_img">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<!--            <ListView-->
+<!--                android:id="@+id/list_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:divider="@null"-->
+<!--                android:layout_height="match_parent"/>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_chechout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="140dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subtotal"
+                        android:textColor="#424141"
+                        android:fontFamily="@font/inter"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 400"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#363636"
+                        android:drawableLeft="@drawable/rupees_icon"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping Fees"
+                        android:textColor="#424141"
+                        android:fontFamily="@font/inter"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 40"
+                        android:fontFamily="@font/inter"
+                        android:textSize="16sp"
+                        android:textColor="#363636"
+                        android:drawableLeft="@drawable/rupees_icon"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#5A5A5A"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_medium"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 440"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/inter_medium"
+                        android:drawableLeft="@drawable/rupees_icon"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <!--                <RelativeLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="30dp"-->
+                <!--                    android:layout_marginLeft="15dp"-->
+                <!--                    android:layout_marginRight="15dp"-->
+                <!--                    android:background="@drawable/gray_rac_add">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/locatin_you"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text=" You seem to be at a new location!"-->
+                <!--                        android:textColor="#154064"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:layout_marginTop="20dp"-->
+                <!--                        android:drawableLeft="@drawable/location_black_icon"-->
+                <!--                        android:textSize="19sp"/>-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/location"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="Bhangel sec-6, Noida, Uttae pradesh"-->
+                <!--                        android:textColor="#154064"-->
+                <!--                        android:layout_below="@+id/locatin_you"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:textSize="16sp"-->
+                <!--                        />-->
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_centerHorizontal="true"-->
+                <!--                        android:layout_marginTop="40dp"-->
+                <!--                        android:layout_below="@+id/location">-->
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginRight="5dp"-->
+                <!--                            android:layout_marginLeft="10dp"-->
+                <!--                            android:layout_weight="1"-->
+                <!--                            android:background="@drawable/add_address_bck">-->
+                <!--                            <TextView-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:text="Add Address"-->
+                <!--                                android:textColor="#154064"-->
+                <!--                                android:layout_centerHorizontal="true"-->
+                <!--                                android:layout_centerVertical="true"-->
+                <!--                                android:fontFamily="@font/inter_medium"-->
+                <!--                                android:textSize="20sp"/>-->
+
+                <!--                        </RelativeLayout>-->
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginLeft="5dp"-->
+                <!--                            android:layout_weight="1"-->
+                <!--                            android:layout_marginRight="10dp"-->
+                <!--                            android:background="@drawable/select_address_bck">-->
+                <!--                            <TextView-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:text="Add Address"-->
+                <!--                                android:textColor="@color/white"-->
+                <!--                                android:layout_centerHorizontal="true"-->
+                <!--                                android:layout_centerVertical="true"-->
+                <!--                                android:fontFamily="@font/inter_medium"-->
+                <!--                                android:textSize="20sp"/>-->
+
+                <!--                        </RelativeLayout>-->
+
+                <!--                    </LinearLayout>-->
+
+
+                <!--                </RelativeLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_rac_checkout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:fontFamily="@font/inter_medium"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="440"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_medium"
+                android:layout_marginLeft="30dp"
+                android:textSize="17sp"
+                android:drawableLeft="@drawable/rupees_icon"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/checkout_bck_blue"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check-Out"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter_semibold"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

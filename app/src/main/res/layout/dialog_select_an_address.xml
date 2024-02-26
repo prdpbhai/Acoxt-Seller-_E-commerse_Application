@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/black_left_arrow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/select_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Select an Address"
+        android:textSize="24dp" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AEACAC"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/select_addr"/>
+    <LinearLayout
+        android:id="@+id/linear_add_adr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/view">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Add Address"
+            android:textColor="#154064"
+            android:fontFamily="@font/roboto_medium"
+            android:drawableLeft="@drawable/plus_circle_icon"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AEACAC"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linear_add_adr"/>
+    <TextView
+        android:id="@+id/save_adr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Address"
+        android:textColor="#154064"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AEACAC"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/save_adr"/>
+    <TextView
+        android:id="@+id/near"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are currently near"
+        android:layout_below="@+id/view3"
+        android:textSize="21sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#20B641"/>
+    <LinearLayout
+        android:id="@+id/linear_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/near"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/location_black_icon"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#154064"
+            android:text=" Home"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bhangel sec-6, Noida, Uttae pradesh"
+            android:textSize="17sp"/>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AEACAC"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/linear_location"/>
+
+
+
+</RelativeLayout>

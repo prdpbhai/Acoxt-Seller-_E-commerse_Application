@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Acoxt Seller</string>
+    <string name="address_text">This is where your orders will be picked up from.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map_navigation">Map_Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="google_maps_key">AIzaSyAH033cDjKN9V6cAm5tntpU9GtDCueH5ZE</string>
+    <string name="default_web_client_id">AIzaSyDV1lj24_83ohkCrgO9oHvL5Ql5GsLrHs4</string>
+    <string name="default_web_client_id_google" translatable="false">1052798214425-63ac7h3lhuuqvjgb11d4ccu908brst7n.apps.googleusercontent.com</string>
+
+    <string name="todo">TODO</string>
+    <string name="result">Result</string>
+    <string name="enter_your_text_here">Enter Your Text Here</string>
+    <string name="generate">Generate</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="scan_image">Scan Image</string>
+    <string name="share">Share</string>
+    <string name="open_image">Open Image</string>
+</resources>

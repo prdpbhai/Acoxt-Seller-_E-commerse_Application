@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Map_Activity">
+    <ImageView
+        android:id="@+id/blue_bcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_green_header_new_bck"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-10dp"/>
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Add Address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#81B4CB"
+        android:drawableLeft="@drawable/back_btn_icon"
+        android:fontFamily="@font/inter_semibold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-15dp"
+        android:layout_below="@+id/blue_bcc">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="15dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/txt_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-12/13,Noida,201301"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter_medium"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/house_no"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal">
+            <RelativeLayout
+                android:id="@+id/allow_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+               android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+
+                android:background="@drawable/continue_btn_bck"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Confirm and Continue"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/manual_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Location Manually"
+                android:textColor="#044561"
+                android:layout_below="@+id/allow_location"
+                android:layout_centerHorizontal="true"
+                />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

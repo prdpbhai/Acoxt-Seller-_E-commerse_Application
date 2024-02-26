@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:paddingStart="15sp"
+        android:fontFamily="@font/inter"
+        android:maxLines="1"
+        android:text="name"/>
+<!--    <TextView-->
+<!--        android:id="@+id/category_name"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="14sp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:maxLines="1"-->
+<!--        android:fontFamily="@font/inter"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="name"/>-->
+    <TextView
+        android:id="@+id/stock_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:paddingRight="25dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/inter"
+        android:text="name"/>
+
+
+</LinearLayout>

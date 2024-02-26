@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order_process_status">
+
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_green_header_new_bck"
+        android:layout_marginTop="-10dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#81B4CB"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="19sp"
+            android:layout_marginLeft="10dp"
+            android:text="Update order status"/>
+    </LinearLayout>
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/order_status"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/order_status_icon"-->
+<!--        android:layout_below="@+id/top_img"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="10dp"/>-->
+    <RelativeLayout
+        android:id="@+id/order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_img"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <RelativeLayout
+            android:id="@+id/order_status_hor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#154E67"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/blue_circle_bck"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/blue_circle_bck"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/blue_circle_bck"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Transit"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                android:layout_marginTop="25dp"
+                android:textColor="#AD000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out for Delivery"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#AD000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:textSize="12sp"
+                android:textColor="#AD000000"
+                android:text="Delivered"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/order_status_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Status"
+        android:layout_below="@+id/order_status"
+        android:layout_marginLeft="20dp"
+        android:textColor="#E2000000"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_status_txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="9dp"
+                android:background="#154E67"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/blue_circle_bck"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/blue_circle_bck"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/blue_circle_bck"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/transit_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 October 2:00 pm"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"
+                    android:textColor="#484848"/>
+                <TextView
+                    android:id="@+id/transit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order In transit "
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/transit_date"
+                    android:textColor="#484848"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp">
+                <TextView
+                    android:id="@+id/out_for_delivery_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 October 2:30 pm"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"
+                    android:textColor="#484848"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Out for Delivery"
+                    android:fontFamily="@font/poppins"
+                    android:layout_below="@+id/out_for_delivery_date"
+                    android:textSize="12sp"
+                    android:textColor="#484848"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp">
+                <TextView
+                    android:id="@+id/delivered_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"
+                    android:textColor="#484848"
+                    android:text="7 October 3:30 pm"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"
+                    android:textColor="#484848"
+                    android:layout_below="@+id/delivered_date"
+                    android:text="Delivered"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

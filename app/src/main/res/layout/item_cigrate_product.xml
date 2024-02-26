@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/card_item"
+    android:layout_height="180dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/cardview_rac">
+    <ImageView
+        android:id="@+id/product_image_munchies"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/banana_chips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/cig_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Plain Banana chips"
+        android:layout_below="@id/product_image_munchies"
+        android:textColor="#154064"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        />
+    <LinearLayout
+        android:id="@+id/weight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/cig_name">
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75"
+            android:textSize="14sp"
+            android:textColor="#B0154064"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/cig_name"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=" gm"-->
+<!--            android:textColor="#9496A1"-->
+<!--            android:textSize="15dp"/>-->
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/rate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="55"-->
+<!--        android:layout_below="@+id/weight"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:textSize="16sp"-->
+<!--        android:drawableLeft="@drawable/rupees_icon"-->
+<!--        android:textColor="#154064"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relative_add"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="27dp"-->
+<!--        android:layout_toEndOf="@id/rate"-->
+<!--        android:layout_below="@id/weight"-->
+<!--        android:background="@drawable/rac_add"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:layout_marginLeft="7dp">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Add"-->
+<!--            android:textColor="#044561"-->
+<!--            android:textSize="19dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"/>-->
+
+<!--    </RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/discount_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹60"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#D55F56"
+                android:textSize="14sp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/relative_add"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="ADD"-->
+<!--                android:textStyle="bold"-->
+<!--               android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/rac_add"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:textColor="#044561"-->
+<!--                android:textSize="15sp"-->
+<!--                android:paddingBottom="5dp"/>-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="14dp">
+                <LinearLayout
+                    android:id="@+id/linear_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="2dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="15dp">
+                    <RelativeLayout
+                        android:id="@+id/relative_decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_rac_minus">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/minus_sign"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:fontFamily="@font/inter_semibold"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/black_rac_plus">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/white_plus_sign"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/relative_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/add_icons"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:textColor="#044561" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discount_price"
+                android:text="₹55"
+                android:layout_marginLeft="10dp"
+                android:textColor="#154064"
+                android:textSize="14sp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

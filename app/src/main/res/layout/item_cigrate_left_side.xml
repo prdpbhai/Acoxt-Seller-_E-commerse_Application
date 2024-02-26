@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_marginTop="15dp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relative_item_type"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gray_circle">
+        <ImageView
+            android:id="@+id/item_type"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cigrate_icon"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/item_name_cig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_item_type"
+        android:fontFamily="@font/inter"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Cigarette"
+        android:textSize="11sp" />
+</RelativeLayout>
+

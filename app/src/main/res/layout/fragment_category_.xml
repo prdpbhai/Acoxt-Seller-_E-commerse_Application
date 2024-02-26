@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F9"
+    tools:context=".Fregment.Category_Fragment">
+
+    <ImageView
+        android:id="@+id/blue_bcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_green_header_new_bck"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Categories"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#81B4CB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="23dp"-->
+<!--        android:layout_height="23dp"-->
+<!--        android:src="@drawable/search_icon"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+<!--    <com.facebook.shimmer.ShimmerFrameLayout-->
+<!--        android:id="@+id/shimmer_view_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/blue_bcc">-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/blue_bcc"
+            android:layout_height="wrap_content"/>
+
+<!--    </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+
+</RelativeLayout>

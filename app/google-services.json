@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1052798214425",
+    "project_id": "acoxt-4dc66",
+    "storage_bucket": "acoxt-4dc66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052798214425:android:17c4dc27fbdbac0fe16588",
+        "android_client_info": {
+          "package_name": "com.example.acoxtseller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052798214425-63ac7h3lhuuqvjgb11d4ccu908brst7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg3rXiHg7GaqAFvkihSqrQ6jC9ikQCePs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052798214425-63ac7h3lhuuqvjgb11d4ccu908brst7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052798214425:android:35d1ea29bf0baca0e16588",
+        "android_client_info": {
+          "package_name": "com.example.khoka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052798214425-63ac7h3lhuuqvjgb11d4ccu908brst7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg3rXiHg7GaqAFvkihSqrQ6jC9ikQCePs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052798214425-63ac7h3lhuuqvjgb11d4ccu908brst7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

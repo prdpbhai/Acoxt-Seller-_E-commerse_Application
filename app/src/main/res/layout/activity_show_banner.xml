@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Show_product_Activity">
+    <ImageView
+        android:id="@+id/top_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_green_header_new_bck"
+        android:layout_marginTop="-15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/back_btn_icon"/>
+        <TextView
+            android:id="@+id/text_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Offer"
+            android:layout_centerHorizontal="true"
+            android:textColor="#81B4CB"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20dp" />
+<!--        <ImageView-->
+<!--            android:id="@+id/search_icon"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:background="@drawable/black_search_icon1"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginRight="20dp"/>-->
+        <RelativeLayout
+            android:id="@+id/search_box"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="search"
+                    android:drawableLeft="@drawable/search_light_icon"
+                    android:textColorHint="#CFCFCF"
+                    android:textColor="@color/black"
+                    android:paddingTop="10dp"
+                    android:drawablePadding="8dp"
+                    android:paddingBottom="10dp"
+                    android:lines="1"
+                    android:paddingLeft="20dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/search_bck"
+                    />
+            </LinearLayout>
+            <!--            <ImageView-->
+            <!--                android:id="@+id/search_icon"-->
+            <!--                android:layout_width="25dp"-->
+            <!--                android:layout_height="25dp"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_marginRight="30dp"-->
+            <!--                android:src="@drawable/white_search_icon"/>-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/show_recy_banner"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top_img"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

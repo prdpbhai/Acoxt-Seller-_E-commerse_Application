@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="options_array">
+        <item>Name Suggestions</item>
+        <item>Raj sharma store</item>
+        <item>RS store</item>
+        <item>R Sharma store</item>
+        <!-- Add more options as needed -->
+    </array>
+</resources>

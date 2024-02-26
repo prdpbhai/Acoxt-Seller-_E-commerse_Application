@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_layout_gst"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Enter_GST_Num">
+    <ImageView
+        android:id="@+id/to_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/top_new_bck"/>
+
+    <RelativeLayout
+        android:id="@+id/back_gst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:id="@+id/abckk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/back_btn_icon"/>
+
+        <TextView
+            android:id="@+id/back_gst1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:text="  Complete Account Details"
+            android:layout_centerHorizontal="true"
+            android:textColor="#81B4CB"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/gst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_img"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Enter GST Number"
+        android:layout_marginTop="70dp"
+        android:textColor="#0C425A"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/gst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GST No. is mandatory to sell online."
+        android:textColor="#FD7C7C7E"
+        android:textSize="15dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/gst"/>
+
+
+    <LinearLayout
+        android:id="@+id/rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gst1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="7"
+
+            android:background="@drawable/enter_gst_bck"
+            android:layout_marginLeft="15dp">
+
+            <EditText
+                android:id="@+id/gst_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textColorHint="#A8A8A8"
+                android:hint="  15 Digit GST no."
+                android:maxLength="15"
+                android:textSize="17sp" />
+
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="GST No."-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:fontFamily="@font/inter_medium"-->
+            <!--                android:layout_marginLeft="46dp"-->
+            <!--                android:layout_marginTop="-11dp"/>-->
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/verify_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="6"
+            android:layout_toEndOf="@+id/rel"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/submit_bck"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Verify"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/continue_btn_bck"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/rela"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Continue"
+            android:textSize="18dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/set_gst_otp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Gst Otp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:visibility="gone"-->
+<!--        android:textSize="25dp"-->
+<!--        android:layout_below="@+id/continue_btn"/>-->
+
+
+
+
+
+</RelativeLayout>

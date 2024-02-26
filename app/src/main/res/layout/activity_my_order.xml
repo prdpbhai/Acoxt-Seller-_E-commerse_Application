@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrder_Activity">
+    <RelativeLayout
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_green_header_new_bck"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_btn_icon"
+                android:layout_marginTop="6dp"
+                />
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Orders"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/back_img"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="9dp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="#81B4CB"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/help_white_bck"
+        android:orientation="vertical"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true">
+       <androidx.recyclerview.widget.RecyclerView
+
+           android:id="@+id/recyclerview_order_list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/blue_bottom_bck"-->
+<!--        android:layout_marginBottom="-10dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom"/>-->
+
+</RelativeLayout>

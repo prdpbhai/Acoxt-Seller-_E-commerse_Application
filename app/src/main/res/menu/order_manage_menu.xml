@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/transit"
+        android:title="In Transit"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/delivery"
+        android:title="Out for Delivery" />
+
+    <item
+        android:id="@+id/delivered"
+        android:title="Delivered" />
+
+</menu>
